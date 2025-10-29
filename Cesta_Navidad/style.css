@@ -1,0 +1,118 @@
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1877f2;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #1877f2;
+  border-bottom: 2px solid #1877f2;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1877f2;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #166fe5;
+}
+
+#tablero-numeros {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.numero-celda {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ocupado {
+  background-color: #e9ebee;
+  color: #90949c;
+  cursor: not-allowed;
+}
+
+.ganador {
+  background-color: #42b72a;
+  color: #fff;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.output-area {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f0f2f5;
+}
+
+.exito {
+  background-color: #42b72a;
+  color: #fff;
+}
+
+.error {
+  background-color: #f02849;
+  color: #fff;
+}

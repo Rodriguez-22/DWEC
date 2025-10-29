@@ -1,0 +1,19 @@
+{
+  "name": "christmas-raffle-no-framework",
+  "version": "1.0.0",
+  "description": "Esta es una aplicación web simple para gestionar el tradicional sorteo de la cesta de navidad.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.9.3"
+  }
+}
