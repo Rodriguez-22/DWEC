@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Raffle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Christmas Raffle</h1>
+
+    <div class="section">
+      <h2>Participant Management</h2>
+      <form id="form-registrar-participante">
+        <input type="text" id="nombre-participante" placeholder="Name" required>
+        <input type="email" id="email-participante" placeholder="Email" required>
+        <input type="tel" id="telefono-participante" placeholder="Phone" required>
+        <button type="submit">Register Participant</button>
+      </form>
+      <button id="btn-listar-participantes">List Participants</button>
+      <div id="lista-participantes" class="output-area"></div>
+    </div>
+
+    <div class="section">
+      <h2>Board Management</h2>
+      <div id="tablero-numeros"></div>
+      <div id="stats">
+        <p>Occupied: <span id="stats-ocupados">0</span></p>
+        <p>Free: <span id="stats-libres">100</span></p>
+        <p>Participants: <span id="stats-participantes">0</span></p>
+        <p>Occupation: <span id="stats-porcentaje">0%</span></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Reserve a Number</h2>
+      <form id="form-reservar-numero">
+        <input type="number" id="numero-reserva" placeholder="Ticket Number" required>
+        <input type="email" id="email-reserva" placeholder="Participant Email" required>
+        <button type="submit">Reserve Number</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>Release a Number</h2>
+      <form id="form-liberar-numero">
+        <input type="number" id="numero-liberar" placeholder="Ticket Number" required>
+        <button type="submit">Release Number</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>Raffle</h2>
+      <form id="form-realizar-sorteo">
+        <input type="number" id="numero-ganador-input" placeholder="Winning Number" required>
+        <button type="submit">Draw Winner</button>
+      </form>
+      <div id="resultado-sorteo" class="output-area"></div>
+    </div>
+
+    <div id="mensajes" class="output-area"></div>
+  </div>
+
+  <script type="module" src="dist/main.js"></script>
+</body>
+</html>
